@@ -45,96 +45,130 @@
 				<!-- Performance -->
 				<div class="tab-pane container fade show active" id="performances">
 					<h1 class="p-2">Suivi de performances</h1>
-					<table class="table table-hover">
+					<table class="table table-sm">
 						<thead>
 							<tr>
 								<th class="col-2">Date</th>
-								<th class="col-8">Performance</th>
-								<th class="col-2">Remarques</th>
+								<th class="col-6" colspan="4">Performance</th>
+								<th class="col-2" colspan="2">Note</th>
+								<th class="col-2" colspan="2">Remarques</th>
+							</tr>
+							<tr>
+								<th></th>
+								<th>#</th>
+								<th>Nage</th>
+								<th>Cycles</th>
+								<th>Temps</th>
+								<th>Vitesse</th>
+								<th>Efficacité</th>
+								<th></th>
 							</tr>
 						</thead>
-						<tbody>
-							<tr class="table-primary">
-								<td>3 Septembre</td>
-								<td>
-									<div class="row border-2 border-bottom border-secondary">
-										<div class="col-2 vertical-align">1er 50m</div>
-										<div class="col-8 border-start border-end border-2 border-secondary">
-											<div class="row px-2">Papillon, 12 cycles</div>
-											<div class="row px-2">Crawl, 13 cycles</div>
-										</div>
-										<div class="col-2 vertical-align">39.8s</div>
-									</div>
-									<div class="row">
-										<div class="col-2 vertical-align">2nd 50m</div>
-										<div class="col-8 border-start border-end border-2 border-secondary">
-											<div class="row px-2">Crawl, 12 cycles</div>
-											<div class="row px-2">Dos, 13 cycles</div>
-										</div>
-										<div class="col-2 vertical-align">42.7s</div>
-									</div>
-								</td>
-								<td>Tenter PC BC CC</td>
+						<tbody class="align-middle">
+							<!-- 3 septembre -->
+							<tr>
+								<td rowspan="4">3 Septembre</td>
+								<td rowspan="2">1er 50m</td>
+								<td>Papillon</td>
+								<td>12</td>
+								<td class="text-center" rowspan="2">39.8s</td>
+								<td class="table-warning text-center" rowspan="2">11</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+								<td rowspan="4">Tenter PC BC CC</td>
 							</tr>
-							<tr class="table-primary">
-								<td>17 Septembre</td>
-								<td>
-									<div class="row border-2 border-bottom border-secondary">
-										<div class="col-2 vertical-align">1er 50m</div>
-										<div class="col-8 border-start border-end border-2 border-secondary">
-											<div class="row px-2">Papillon, 10 cycles</div>
-											<div class="row px-2">Crawl, 13 cycles</div>
-										</div>
-										<div class="col-2 vertical-align">36.0s</div>
-									</div>
-									<div class="row border-2 border-bottom border-secondary">
-										<div class="col-2 vertical-align">2nd 50m</div>
-										<div class="col-8 border-start border-end border-2 border-secondary">
-											<div class="row px-2">Crawl, 11 cycles</div>
-											<div class="row px-2">Dos, 14 cycles</div>
-										</div>
-										<div class="col-2 vertical-align">41s</div>
-									</div>
-									<div class="row">
-										<div class="col-2 vertical-align">3ème 50m</div>
-										<div class="col-8 border-start border-end border-2 border-secondary">
-											<div class="row px-2">Crawl, 10 cycles</div>
-											<div class="row px-2">Crawl, 13 cycles</div>
-										</div>
-										<div class="col-2 vertical-align">36.5s</div>
-									</div>
-								</td>
-								<td>Tenter  PD BC CC</td>
+							<tr>
+								<td>Crawl</td>
+								<td>13</td>
 							</tr>
-							<tr class="table-primary">
-								<td>1 Octobre</td>
-								<td>
-									<div class="row border-2 border-bottom border-secondary">
-										<div class="col-2 vertical-align">1er 50m</div>
-										<div class="col-8 border-start border-end border-2 border-secondary">
-											<div class="row px-2">Papillon, 12 cycles</div>
-											<div class="row px-2">Crawl, 13 cycles</div>
-										</div>
-										<div class="col-2 vertical-align">36.5s</div>
-									</div>
-									<div class="row border-2 border-bottom border-secondary">
-										<div class="col-2 vertical-align">2nd 50m</div>
-										<div class="col-8 border-start border-end border-2 border-secondary">
-											<div class="row px-2">Crawl, 9 cycles</div>
-											<div class="row px-2">Dos, 13 cycles</div>
-										</div>
-										<div class="col-2 vertical-align">39.1s</div>
-									</div>
-									<div class="row">
-										<div class="col-2 vertical-align">3ème 50m</div>
-										<div class="col-8 border-start border-end border-2 border-secondary">
-											<div class="row px-2">Crawl, 10 cycles</div>
-											<div class="row px-2">Crawl, 11 cycles</div>
-										</div>
-										<div class="col-2 vertical-align">36.0s</div>
-									</div>
-								</td>
-								<td></td>
+							<tr>
+								<td rowspan="2">2nd 50m</td>
+								<td>Crawl</td>
+								<td>12</td>
+								<td class="text-center" rowspan="2">42.7s</td>
+								<td class="table-warning text-center" rowspan="2">8</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+							</tr>
+							<tr>
+								<td>Dos</td>
+								<td>13</td>
+							</tr>
+							<!-- 17 septembre -->
+							<tr>
+								<td rowspan="6">17 Septembre</td>
+								<td rowspan="2">1er 50m</td>
+								<td>Papillon</td>
+								<td>10</td>
+								<td class="text-center" rowspan="2">36.0s</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+								<td rowspan="6">Tenter PD BC CC</td>
+							</tr>
+							<tr>
+								<td>Crawl</td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td rowspan="2">2nd 50m</td>
+								<td>Crawl</td>
+								<td>11</td>
+								<td class="text-center" rowspan="2">41.0s</td>
+								<td class="table-warning text-center" rowspan="2">10</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+							</tr>
+							<tr>
+								<td>Dos</td>
+								<td>14</td>
+							</tr>
+							<tr>
+								<td rowspan="2">3ème 50m</td>
+								<td>Crawl</td>
+								<td>10</td>
+								<td class="text-center" rowspan="2">36.5s</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+							</tr>
+							<tr>
+								<td>Crawl</td>
+								<td>13</td>
+							</tr>
+							<!-- 1 octobre -->
+							<tr>
+								<td rowspan="6">1 Octobre</td>
+								<td rowspan="2">1er 50m</td>
+								<td>Papillon</td>
+								<td>12</td>
+								<td class="text-center" rowspan="2">36.5s</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+								<td rowspan="6"></td>
+							</tr>
+							<tr>
+								<td>Crawl</td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td rowspan="2">2nd 50m</td>
+								<td>Crawl</td>
+								<td>9</td>
+								<td class="text-center" rowspan="2">39.1s</td>
+								<td class="table-warning text-center" rowspan="2">11</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+							</tr>
+							<tr>
+								<td>Dos</td>
+								<td>13</td>
+							</tr>
+							<tr>
+								<td rowspan="2">3ème 50m</td>
+								<td>Crawl</td>
+								<td>10</td>
+								<td class="text-center" rowspan="2">36.0s</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+								<td class="table-success text-center" rowspan="2">12</td>
+							</tr>
+							<tr>
+								<td>Crawl</td>
+								<td>11</td>
 							</tr>
 						</tbody>
 					</table>
